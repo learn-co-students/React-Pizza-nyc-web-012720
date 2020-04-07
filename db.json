@@ -1,54 +1,64 @@
-{"pizzas":
-  [
-    { "id": 1,
-      "topping": "Plain",
-      "size": "Small",
-      "vegetarian": true
-    },
-    { "id": 2,
-      "topping": "Pepperoni",
-      "size": "Small",
-      "vegetarian": false
-    },
-    { "id": 3,
-      "topping": "Mushroom",
-      "size": "Small",
-      "vegetarian": true
-    },
-    { "id": 4,
-      "topping": "Sausage",
-      "size": "Small",
-      "vegetarian": false
-    },
-    { "id": 5,
-      "topping": "Bacon",
+{
+  "pizzas": [
+    {
+      "id": 1,
+      "topping": "Plainapes!",
       "size": "Medium",
-      "vegetarian": false
+      "vegetarian": "Vegetarian"
     },
-    { "id": 6,
+    {
+      "id": 2,
+      "topping": "Peepop",
+      "size": "Medium",
+      "vegetarian": "Vegetarian"
+    },
+    {
+      "id": 3,
+      "topping": "Mushroom",
+      "size": "Medium",
+      "vegetarian": "Vegetarian"
+    },
+    {
+      "id": 4,
+      "topping": "Sausaggg",
+      "size": "Small",
+      "vegetarian": "Vegetarian"
+    },
+    {
+      "id": 5,
+      "topping": "Baconniii",
+      "size": "Medium",
+      "vegetarian": "Vegetarian"
+    },
+    {
+      "id": 6,
       "topping": "Spinach",
       "size": "Medium",
-      "vegetarian": true
+      "vegetarian": "Not Vegetarian"
     },
-    { "id": 7,
+    {
+      "id": 7,
       "topping": "Black Olive",
       "size": "Medium",
-      "vegetarian": true
+      "vegetarian": "Vegetarian"
     },
-    { "id": 8,
+    {
+      "id": 8,
       "topping": "Pineapple",
       "size": "Medium",
-      "vegetarian": true
+      "vegetarian": "Vegetarian"
     },
-    { "id": 9,
+    {
+      "id": 9,
       "topping": "Salami",
       "size": "Large",
-      "vegetarian": false
+      "vegetarian": "Not Vegetarian"
     },
-    { "id": 10,
-      "topping": "Chicken",
-      "size": "Large",
-      "vegetarian": true
+    {
+      "id": 10,
+      "topping": "Chickensoup",
+      "size": "Medium",
+      "vegetarian": "Not Vegetarian"
     }
   ]
 }
