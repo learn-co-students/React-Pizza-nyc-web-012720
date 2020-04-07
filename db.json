@@ -2,21 +2,21 @@
   "pizzas": [
     {
       "id": 1,
-      "topping": "Plainapes!",
+      "topping": "Plainapes!!!!",
       "size": "Medium",
       "vegetarian": "Vegetarian"
     },
     {
       "id": 2,
-      "topping": "Peepop",
+      "topping": "Peep hi",
       "size": "Medium",
-      "vegetarian": "Vegetarian"
+      "vegetarian": "Not Vegetarian"
     },
     {
       "id": 3,
-      "topping": "Mushroom",
-      "size": "Medium",
-      "vegetarian": "Vegetarian"
+      "topping": "Mushroom hi",
+      "size": "Small",
+      "vegetarian": "Not Vegetarian"
     },
     {
       "id": 4,

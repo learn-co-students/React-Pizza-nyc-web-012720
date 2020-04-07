@@ -44,15 +44,22 @@ class App extends Component {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(this.state.editing)
     })
-    // this.setState({editing: []})
-    
+    .then(res => res.json())
+    .then(data => {
+      let newPizzaArray= this.state.pizzas.map( pizza => {
+        if(pizza.id === data.id){
+          return data
+        } else { return pizza }
+      })
+      this.setState({ pizzas: newPizzaArray, editing: []})
+    })
   }
 
-  componentDidUpdate(_, prevState) {
-    if (prevState.pizzas !== this.state.pizzas) {
-        this.newFetch();
-    }
-}
+  // componentDidUpdate(_, prevState) {
+  //   if (prevState.editing !== this.state.editing) {
+  //       this.newFetch();
+  //     }
+  // }
 
   render() {
     console.log(this.state.editing)
