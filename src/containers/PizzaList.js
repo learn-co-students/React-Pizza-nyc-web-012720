@@ -14,9 +14,13 @@ class PizzaList extends Component {
 					</tr>
 				</thead>
 				<tbody>
-					{
-						this.props.pizzas.map((pizza, index) => <Pizza pizza={pizza} key={index} setCurrentPizza={this.props.setCurrentPizza}/>)
-					}
+					{this.props.pizzas.map((pizza, index) => (
+						<Pizza
+							pizza={pizza}
+							key={index}
+							setCurrentPizza={this.props.setCurrentPizza}
+						/>
+					))}
 				</tbody>
 			</table>
 		)

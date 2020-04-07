@@ -24,33 +24,33 @@ const PizzaForm = props => {
 				</select>
 			</div>
 			<div className="col">
-				<div
-					className="form-check"
-					onChange={event => props.handleVegChange(event)}
-				>
+				<div className="form-check">
 					<input
 						className="form-check-input"
 						type="radio"
 						value="Vegetarian"
+						onChange={event => props.handleVegChange(event)}
 						checked={props.currentPizza.vegetarian === true}
 					/>
 					<label className="form-check-label">Vegetarian</label>
 				</div>
-				<div
-					className="form-check"
-					onChange={event => props.handleVegChange(event)}
-				>
+				<div className="form-check">
 					<input
 						className="form-check-input"
 						type="radio"
 						value="Not Vegetarian"
+						onChange={event => props.handleVegChange(event)}
 						checked={props.currentPizza.vegetarian !== true}
 					/>
 					<label className="form-check-label">Not Vegetarian</label>
 				</div>
 			</div>
 			<div className="col">
-				<button type="submit" className="btn btn-success" onClick={props.updatePizza}>
+				<button
+					type="submit"
+					className="btn btn-success"
+					onClick={props.updatePizza}
+				>
 					Submit
 				</button>
 			</div>

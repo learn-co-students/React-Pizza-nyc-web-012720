@@ -55,21 +55,25 @@ else {
 }
 
   updatePizza = () => {
+    const id = this.state.currentPizza.id
+    console.log(this.state.currentPizza)
     const configObject = {
       method: 'PATCH',
-      headers: {accept: 'application/json',
+      headers: {'accept': 'application/json',
                 'content-type': 'application/json'
     },
     body: JSON.stringify({
-      id: this.state.currentPizza.id,
       topping: this.state.currentPizza.topping,
       vegetarian: this.state.currentPizza.vegetarian,
       size: this.state.currentPizza.size
     })
     }
-    fetch('http://localhost:3000/pizzas', configObject)
+    fetch(`http://localhost:3000/pizzas/${id}`, configObject)
     .then(resp => resp.json())
     .then(result => console.log(result))
+    fetch('http://localhost:3000/pizzas')
+    .then(resp => resp.json())
+    .then(pizzas => this.setState({ pizzas }))
   }
 
   
@@ -77,8 +81,15 @@ else {
     return (
       <Fragment>
         <Header/>
-        <PizzaForm currentPizza={this.state.currentPizza} handleNameChange={this.handleNameChange} handleSizeChange={this.handleSizeChange} handleVegChange={this.handleVegChange} updatePizza={this.updatePizza}/>
-        <PizzaList pizzas={this.state.pizzas} setCurrentPizza={this.setCurrentPizza} />
+        <PizzaForm 
+        currentPizza={this.state.currentPizza} 
+        handleNameChange={this.handleNameChange} 
+        handleSizeChange={this.handleSizeChange} 
+        handleVegChange={this.handleVegChange} 
+        updatePizza={this.updatePizza}/>
+        <PizzaList 
+        pizzas={this.state.pizzas} 
+        setCurrentPizza={this.setCurrentPizza} />
       </Fragment>
     );
   }

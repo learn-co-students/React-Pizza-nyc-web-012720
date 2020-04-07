@@ -7,7 +7,11 @@ const Pizza = props => {
 			<td>{props.pizza.size}</td>
 			<td>{props.pizza.vegetarian === true ? 'Yes' : 'No'}</td>
 			<td>
-				<button type="button" className="btn btn-primary" onClick={() => props.setCurrentPizza(props.pizza)}>
+				<button
+					type="button"
+					className="btn btn-primary"
+					onClick={() => props.setCurrentPizza(props.pizza)}
+				>
 					Edit Pizza
 				</button>
 			</td>
